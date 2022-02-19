@@ -1,0 +1,63 @@
+➜ ./mthreads -t 1 -s 4000 -v 1.5
+T: 1
+N: 4000
+V: 1.500000
+R: 1, C: 1
+Multithreaded Array Sum is: 24000000
+Array sum: 24000000.000000
+Two sums are equal! Validated.
+Timing for thread[0]: (in nanosec.) 106765053.000000
+Timing for the n^2 loop time: (in nanosec.) 45607212
+Total program computation time: 152606181
+
+
+➜ ./mthreads -t 2 -s 4000 -v 1.5
+T: 2
+N: 4000
+V: 1.500000
+R: 2, C: 1
+Multithreaded Array Sum is: 24000000
+Array sum: 24000000.000000
+Two sums are equal! Validated.
+Timing for thread[0]: (in nanosec.) 54588117.000000
+Timing for thread[1]: (in nanosec.) 53407383.000000
+Timing for the n^2 loop time: (in nanosec.) 45866063
+Total program computation time: 154215552
+
+➜ ./mthreads -t 4 -s 4000 -v 1.5
+T: 4
+N: 4000
+V: 1.500000
+R: 2, C: 2
+Multithreaded Array Sum is: 24000000
+Array sum: 24000000.000000
+Two sums are equal! Validated.
+Timing for thread[0]: (in nanosec.) 27098579.000000
+Timing for thread[1]: (in nanosec.) 27479287.000000
+Timing for thread[2]: (in nanosec.) 26989843.000000
+Timing for thread[3]: (in nanosec.) 27626058.000000
+Timing for the n^2 loop time: (in nanosec.) 45638617
+Total program computation time: 155199698
+
+
+
+➜ ./mthreads -t 8 -s 4000 -v 1.5
+T: 8
+N: 4000
+V: 1.500000
+R: 4, C: 2
+Multithreaded Array Sum is: 24000000
+Array sum: 24000000.000000
+Two sums are equal! Validated.
+Timing for thread[0]: (in nanosec.) 13428876.000000
+Timing for thread[1]: (in nanosec.) 14010878.000000
+Timing for thread[2]: (in nanosec.) 13920015.000000
+Timing for thread[3]: (in nanosec.) 13452055.000000
+Timing for thread[4]: (in nanosec.) 22670152.000000
+Timing for thread[5]: (in nanosec.) 13597300.000000
+Timing for thread[6]: (in nanosec.) 13479983.000000
+Timing for thread[7]: (in nanosec.) 13448199.000000
+Timing for the n^2 loop time: (in nanosec.) 45564587
+Total program computation time: 164129559
+
+
